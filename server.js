@@ -20,12 +20,6 @@ app.use(
 //   res.json({ msg: "Welcome to my Website!" });
 // });
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-  });
-}
 //Routes
 app.use("/user", require("./routes/userRouter.js"));
 app.use("/api", require("./routes/categoryRouter"));
@@ -46,7 +40,12 @@ mongoose.connect(
     console.log("Connected to MongoDB");
   }
 );
-
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+  });
+}
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
