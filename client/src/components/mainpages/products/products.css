@@ -1,0 +1,117 @@
+.products {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    justify-items: center;
+    margin: 20px 0;
+}
+
+.delete-all {
+    text-align: right;
+    margin: 20px;
+}
+
+.delete-all input {
+    height: 25px;
+    width: 25px;
+    transform: translateY(5px);
+    margin: 0 15px;
+}
+
+.delete-all span {
+    position: relative;
+    text-transform: uppercase;
+    color: rgb(3, 165, 206);
+    letter-spacing: 1.3px;
+}
+
+.delete-all span:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    background: rgb(3, 165, 206);
+    z-index: -1;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+} 
+
+.delete-all span:hover{
+    color:white;
+}
+.delete-all span:hover:before{
+    bottom: 0%;
+    top: auto;
+    height: 101%;
+}
+
+.delete-all button {
+    position: relative;
+    border: 1px solid crimson;
+    padding: 10px 25px;
+    color: crimson;
+    text-transform: uppercase;
+}
+
+.delete-all button:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    background: crimson;
+    z-index: -1;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.delete-all button:hover {
+    color: white;
+
+}
+
+.delete-all button:hover:before {
+    bottom: 0%;
+    top: auto;
+    height: 101%;
+}
+
+
+/* ----------------Product item--------------------- */
+@import url("../utils/productItem/productItem.css");
+
+/* -------------Filter Menu --------------------*/
+.filter_menu {
+    width: 100%;
+    min-height: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 15px 0px;
+}
+
+.filter_menu select, input{
+    border: 1px solid #ccc;
+    outline: none;
+    height: 40px;
+    padding: 0 5px;
+}
+
+.filter_menu input{
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* ----------------Load More------------------------> */
+.load_more{
+    text-align: center;
+}
+.load_more button{
+    padding: 10px 25px;
+    margin-bottom: 20px;
+    border: 1px solid #555;
+    text-transform: capitalize;
+}
