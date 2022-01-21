@@ -16,9 +16,9 @@ app.use(
   })
 );
 
-app.get("/", (req, res) => {
-  res.json({ msg: "Welcome to my Website!" });
-});
+// app.get("/", (req, res) => {
+//   res.json({ msg: "Welcome to my Website!" });
+// });
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
