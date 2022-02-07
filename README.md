@@ -2,7 +2,7 @@
 
 > Ecommerce website built with the MERN stack with React Context API for state management, pure CSS for style
 
-## Demo: https://ecommerce-basic-app.herokuapp.com/herokuapp.com/
+## Demo: https://ecommerce-basic-app.herokuapp.com/
 
 ## Install dependencies for server
 
