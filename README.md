@@ -35,5 +35,7 @@
 ![atl](https://res.cloudinary.com/dcnxg5hjv/image/upload/v1644241594/ecommerce/Screenshot_2022-02-07_204317_kyvo2u.png)
 
 ### Admin interface
+### email: admin@gmail.com
+### password : 123456
 
 ![atl](https://res.cloudinary.com/dcnxg5hjv/image/upload/v1644241594/ecommerce/Screenshot_2022-02-07_204403_dszzz9.png)
